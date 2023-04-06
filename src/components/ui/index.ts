@@ -6,6 +6,7 @@ import HireMe from './HireMe';
 import Skills from './Skills';
 import Experiences from './Experiences';
 import Education from './Education';
+import TransitionEffect from './TransitionEffect';
 
 import LiIcon from './LiIcon';
 
@@ -19,6 +20,7 @@ export {
   Experiences,
   LiIcon,
   Education,
+  TransitionEffect,
 };
 
 export * from './Icons';

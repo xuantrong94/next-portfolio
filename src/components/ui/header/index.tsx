@@ -69,7 +69,7 @@ const Header: NextPage<HeaderProps> = ({}) => {
     setIsOpen((prev) => !prev);
   };
   return (
-    <header className="relative z-50 flex w-full items-center justify-start px-8 py-8 font-medium dark:text-light lg:justify-between xl:px-32">
+    <header className="relative z-20 flex w-full items-center justify-start px-8 py-8 font-medium dark:text-light lg:justify-between xl:px-32">
       <button
         className="flex flex-col items-center justify-center lg:hidden"
         onClick={handleClick}

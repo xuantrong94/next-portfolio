@@ -1,8 +1,13 @@
-import { AnimatedText, GithubIcon, Layout } from '@/components';
+import {
+  AnimatedText,
+  GithubIcon,
+  Layout,
+  TransitionEffect,
+} from '@/components';
 import Link from 'next/link';
 import React from 'react';
 import Image, { StaticImageData } from 'next/image';
-import { Project1Img, Project2Img } from '@/libs/img';
+import { Project1Img, Project2Img, Project3Img, Project4Img } from '@/libs/img';
 export interface IFeaturedProject {
   title: string;
   summary: string;
@@ -57,14 +62,16 @@ type Props = {};
 
 const Projects = (props: Props) => {
   return (
-    <main className="centered mb-16 w-full flex-col">
-      <Layout className="pt-8 lg:pt-16">
-        <AnimatedText
-          text="I exerted my utmost effort"
-          className="mb-8 text-center !text-3xl md:!text-5xl lg:mb-16 xl:!text-8xl"
-        />
+    <>
+      <TransitionEffect />
+      <main className="centered mb-16 w-full flex-col">
+        <Layout className="pt-8 lg:pt-16">
+          <AnimatedText
+            text="My utmost effort"
+            className="mb-8 text-center !text-3xl md:!text-5xl lg:mb-16 xl:!text-8xl"
+          />
 
-        {/* <div className="grid grid-cols-12 gap-24">
+          {/* <div className="grid grid-cols-12 gap-24">
           <div className="col-span-12">
             <FeaturedProject
               title="Yolo Shop"
@@ -84,24 +91,39 @@ const Projects = (props: Props) => {
             />
           </div>
         </div> */}
-        <div className="space-y-12 lg:space-y-20">
-          <FeaturedProject
-            title="Yolo Shop"
-            summary="The clothing store frontend project is a website where people can browse and buy clothes online. It includes a home page, product pages, a shopping cart.  It's built using React, Sass and redux. It's designed to work on different devices."
-            img={Project1Img}
-            link="https://xuantrong94-yolo-shop.vercel.app/"
-            github="https://github.com/xuantrong94/ecommerce"
-          />
-          <FeaturedProject
-            title="Beach Hotel"
-            summary="The booking hotel frontend project is a website that allows people to search for, compare, and book hotels online. It has a home page, search page, results page, hotel details page and booking page. Users can filter and sort search results based on size, price and. It's built using React. It's designed to work on different devices."
-            img={Project2Img}
-            link="https://xuantrong94-beach-hotel.vercel.app/"
-            github="https://github.com/xuantrong94/beach-hotel"
-          />
-        </div>
-      </Layout>
-    </main>
+          <div className="space-y-12 lg:space-y-20">
+            <FeaturedProject
+              title="Yolo Shop"
+              summary="The clothing store frontend project is a website where people can browse and buy clothes online. It includes a home page, product pages, a shopping cart. It's built using React, Sass and redux. It's designed to work on different devices."
+              img={Project1Img}
+              link="https://xuantrong94-yolo-shop.vercel.app/"
+              github="https://github.com/xuantrong94/ecommerce"
+            />
+            <FeaturedProject
+              title="Beach Hotel"
+              summary="The booking hotel frontend project is a website that allows people to search for, compare, and book hotels online. It has a home page, search page, results page, hotel details page and booking page. Users can filter and sort search results based on size, price and. It's built using React. It's designed to work on different devices."
+              img={Project2Img}
+              link="https://xuantrong94-beach-hotel.vercel.app/"
+              github="https://github.com/xuantrong94/beach-hotel"
+            />
+            <FeaturedProject
+              title="Portfolio"
+              summary="The portfolio frontend project built using Next.js and styled with Tailwind CSS. It also uses Framer Motion for animations and transitions. The website is optimized for performance and accessibility, and has a smooth user experience."
+              img={Project3Img}
+              link="https://xuantrong94-next-portfolio.vercel.app/"
+              github="https://github.com/xuantrong94/next-portfolio"
+            />
+            <FeaturedProject
+              title="Shoe Shop"
+              summary="The frontend project is a website built with Next.js, Tailwind CSS, and Framer Motion. It's optimized for performance and has smooth animations."
+              img={Project4Img}
+              link="https://xuantrong94-next-shoe-shop.vercel.app/"
+              github="https://github.com/xuantrong94/next-shoe-shop"
+            />
+          </div>
+        </Layout>
+      </main>
+    </>
   );
 };
 
