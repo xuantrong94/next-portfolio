@@ -1,10 +1,10 @@
 import { AnimatedText, HireMe, Layout, TransitionEffect } from '@/components'
+import { LinkArrow } from '@/components/ui/Icons'
+import { Profile1 } from '@/libs/img'
 import { NextPage } from 'next'
 import Image from 'next/image'
-import { Profile1 } from '@/libs/img'
 import Link from 'next/link'
-import { LinkArrow } from '@/components/ui/Icons'
-interface HomeProps {}
+export type HomeProps = {}
 
 const Home: NextPage<HomeProps> = ({}) => {
   return (
