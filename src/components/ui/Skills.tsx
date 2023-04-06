@@ -1,12 +1,12 @@
-import { motion } from 'framer-motion';
-import React from 'react';
+import { motion } from 'framer-motion'
+import React from 'react'
 
-type SkillsProps = {};
+type SkillsProps = {}
 
 export interface ISkill {
-  name: string;
-  x: string;
-  y: string;
+  name: string
+  x: string
+  y: string
 }
 
 export const Skill: React.FC<ISkill> = ({ name, x, y }) => {
@@ -20,8 +20,8 @@ export const Skill: React.FC<ISkill> = ({ name, x, y }) => {
     >
       {name}
     </motion.div>
-  );
-};
+  )
+}
 
 const Skills: React.FC<SkillsProps> = () => {
   return (
@@ -45,7 +45,7 @@ const Skills: React.FC<SkillsProps> = () => {
         <Skill name="NextJS" x="-28vw" y="-20vw" />
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Skills;
+export default Skills

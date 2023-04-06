@@ -1,9 +1,9 @@
-import { AnimatedText, HireMe, Layout, TransitionEffect } from '@/components';
-import { NextPage } from 'next';
-import Image from 'next/image';
-import { Profile1 } from '@/libs/img';
-import Link from 'next/link';
-import { LinkArrow } from '@/components/ui/Icons';
+import { AnimatedText, HireMe, Layout, TransitionEffect } from '@/components'
+import { NextPage } from 'next'
+import Image from 'next/image'
+import { Profile1 } from '@/libs/img'
+import Link from 'next/link'
+import { LinkArrow } from '@/components/ui/Icons'
 interface HomeProps {}
 
 const Home: NextPage<HomeProps> = ({}) => {
@@ -14,13 +14,7 @@ const Home: NextPage<HomeProps> = ({}) => {
         <Layout className="pt-0 sm:pt-8 md:pt-16">
           <div className="flex w-full flex-col items-center justify-between gap-8 lg:flex-row">
             <div className="w-full md:w-1/2">
-              <Image
-                src={Profile1}
-                alt="profile"
-                width={500}
-                height={500}
-                priority
-              />
+              <Image src={Profile1} alt="profile" width={500} height={500} priority />
             </div>
             <div className="flex w-full flex-col items-center justify-center lg:w-1/2 lg:items-start">
               <AnimatedText
@@ -28,10 +22,9 @@ const Home: NextPage<HomeProps> = ({}) => {
                 className="text-center !text-3xl md:!text-4xl lg:!text-left xl:!text-5xl"
               />
               <p className="my-4 text-center text-sm font-medium md:text-base lg:text-left">
-                As a frontend developer, I am dedicated to creating innovative
-                solutions that fulfill my clients' requirements. You can explore
-                my recent projects and articles to witness my proficiency in web
-                development in action, particularly in React.js.
+                As a frontend developer, I am dedicated to creating innovative solutions that
+                fulfill my clients' requirements. You can explore my recent projects and articles to
+                witness my proficiency in web development in action, particularly in React.js.
               </p>
               <div className="mt-2 flex flex-col items-center justify-center gap-y-4 text-sm font-medium md:flex-row md:text-base">
                 <a
@@ -57,8 +50,8 @@ const Home: NextPage<HomeProps> = ({}) => {
         <HireMe />
       </main>
     </>
-  );
-};
+  )
+}
 
 // export const getStaticProps: GetStaticProps = async () => {
 //   const categoriesResponse = await fetchDataFromAPI('api/categories');
@@ -70,4 +63,4 @@ const Home: NextPage<HomeProps> = ({}) => {
 //   };
 // };
 
-export default Home;
+export default Home

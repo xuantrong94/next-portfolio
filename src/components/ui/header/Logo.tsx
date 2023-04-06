@@ -1,10 +1,10 @@
-import Link from 'next/link';
-import React from 'react';
-import { motion } from 'framer-motion';
+import Link from 'next/link'
+import React from 'react'
+import { motion } from 'framer-motion'
 
-const MotionLink = motion(Link);
+const MotionLink = motion(Link)
 
-type Props = {};
+type Props = {}
 
 const Logo = (props: Props) => {
   return (
@@ -27,7 +27,7 @@ const Logo = (props: Props) => {
         JUGG
       </MotionLink>
     </div>
-  );
-};
+  )
+}
 
-export default Logo;
+export default Logo

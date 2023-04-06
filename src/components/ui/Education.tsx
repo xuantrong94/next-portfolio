@@ -1,20 +1,17 @@
-import React, { useRef } from 'react';
-import { motion, useScroll } from 'framer-motion';
-import LiIcon from './LiIcon';
+import React, { useRef } from 'react'
+import { motion, useScroll } from 'framer-motion'
+import LiIcon from './LiIcon'
 export interface IDetails {
-  position: string;
-  company: string;
-  time: string;
-  work: string;
+  position: string
+  company: string
+  time: string
+  work: string
 }
 
 const Details: React.FC<IDetails> = ({ position, company, time, work }) => {
-  const ref = useRef(null);
+  const ref = useRef(null)
   return (
-    <li
-      ref={ref}
-      className="mx-auto w-3/4 flex-col first:mt-0 last:mb-0 md:w-2/3"
-    >
+    <li ref={ref} className="mx-auto w-3/4 flex-col first:mt-0 last:mb-0 md:w-2/3">
       <LiIcon reference={ref} />
       <motion.div
         initial={{ y: 50 }}
@@ -30,17 +27,17 @@ const Details: React.FC<IDetails> = ({ position, company, time, work }) => {
         <p className="w-full text-sm font-medium md:text-base">{work}</p>
       </motion.div>
     </li>
-  );
-};
+  )
+}
 
-type ExperiencesProps = {};
+type ExperiencesProps = {}
 
 const Education: React.FC<ExperiencesProps> = () => {
-  const ref = useRef(null);
+  const ref = useRef(null)
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ['start end', 'center start'],
-  });
+  })
 
   return (
     <div className="my-12 md:my-20 xl:my-32">
@@ -70,7 +67,7 @@ const Education: React.FC<ExperiencesProps> = () => {
         </ul>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Education;
+export default Education

@@ -1,7 +1,4 @@
-export const TwitterIcon: React.FC<{ className?: string }> = ({
-  className,
-  ...rest
-}) => (
+export const TwitterIcon: React.FC<{ className?: string }> = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1.23em"
@@ -17,12 +14,9 @@ export const TwitterIcon: React.FC<{ className?: string }> = ({
       className={className}
     />
   </svg>
-);
+)
 
-export const GithubIcon: React.FC<{ className?: string }> = ({
-  className,
-  ...rest
-}) => (
+export const GithubIcon: React.FC<{ className?: string }> = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -37,12 +31,9 @@ export const GithubIcon: React.FC<{ className?: string }> = ({
       d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 0 0 3.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 0 1-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0 0 25.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 0 1 5-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 0 1 112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 0 1 5 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 0 0 4-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32Z"
     />
   </svg>
-);
+)
 
-export const LinkedInIcon: React.FC<{ className?: string }> = ({
-  className,
-  ...rest
-}) => (
+export const LinkedInIcon: React.FC<{ className?: string }> = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -61,12 +52,9 @@ export const LinkedInIcon: React.FC<{ className?: string }> = ({
       />
     </g>
   </svg>
-);
+)
 
-export const SunIcon: React.FC<{ className?: string }> = ({
-  className,
-  ...rest
-}) => (
+export const SunIcon: React.FC<{ className?: string }> = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"
@@ -84,12 +72,7 @@ export const SunIcon: React.FC<{ className?: string }> = ({
     >
       <g strokeDasharray="2">
         <path d="M12 21v1M21 12h1M12 3v-1M3 12h-1">
-          <animate
-            fill="freeze"
-            attributeName="stroke-dashoffset"
-            dur="0.2s"
-            values="4;2"
-          />
+          <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="4;2" />
         </path>
         <path d="M18.5 18.5l0.5 0.5M18.5 5.5l0.5 -0.5M5.5 5.5l-0.5 -0.5M5.5 18.5l-0.5 0.5">
           <animate
@@ -179,50 +162,14 @@ export const SunIcon: React.FC<{ className?: string }> = ({
     <mask id="lineMdSunnyFilledLoopToMoonFilledLoopTransition1">
       <circle cx="12" cy="12" r="12" fill="#fff" />
       <circle cx="22" cy="2" r="3" fill="#fff">
-        <animate
-          fill="freeze"
-          attributeName="cx"
-          begin="0.1s"
-          dur="0.4s"
-          values="22;18"
-        />
-        <animate
-          fill="freeze"
-          attributeName="cy"
-          begin="0.1s"
-          dur="0.4s"
-          values="2;6"
-        />
-        <animate
-          fill="freeze"
-          attributeName="r"
-          begin="0.1s"
-          dur="0.4s"
-          values="3;12"
-        />
+        <animate fill="freeze" attributeName="cx" begin="0.1s" dur="0.4s" values="22;18" />
+        <animate fill="freeze" attributeName="cy" begin="0.1s" dur="0.4s" values="2;6" />
+        <animate fill="freeze" attributeName="r" begin="0.1s" dur="0.4s" values="3;12" />
       </circle>
       <circle cx="22" cy="2" r="1">
-        <animate
-          fill="freeze"
-          attributeName="cx"
-          begin="0.1s"
-          dur="0.4s"
-          values="22;18"
-        />
-        <animate
-          fill="freeze"
-          attributeName="cy"
-          begin="0.1s"
-          dur="0.4s"
-          values="2;6"
-        />
-        <animate
-          fill="freeze"
-          attributeName="r"
-          begin="0.1s"
-          dur="0.4s"
-          values="1;10"
-        />
+        <animate fill="freeze" attributeName="cx" begin="0.1s" dur="0.4s" values="22;18" />
+        <animate fill="freeze" attributeName="cy" begin="0.1s" dur="0.4s" values="2;6" />
+        <animate fill="freeze" attributeName="r" begin="0.1s" dur="0.4s" values="1;10" />
       </circle>
     </mask>
     <circle
@@ -233,21 +180,12 @@ export const SunIcon: React.FC<{ className?: string }> = ({
       mask="url(#lineMdSunnyFilledLoopToMoonFilledLoopTransition1)"
     >
       <set attributeName="opacity" begin="0.5s" to="0" />
-      <animate
-        fill="freeze"
-        attributeName="r"
-        begin="0.1s"
-        dur="0.4s"
-        values="6;10"
-      />
+      <animate fill="freeze" attributeName="r" begin="0.1s" dur="0.4s" values="6;10" />
     </circle>
   </svg>
-);
+)
 
-export const MoonIcon: React.FC<{ className?: string }> = ({
-  className,
-  ...rest
-}) => (
+export const MoonIcon: React.FC<{ className?: string }> = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"
@@ -307,21 +245,10 @@ export const MoonIcon: React.FC<{ className?: string }> = ({
     </g>
     <g fill="currentColor">
       <path d="M15.22 6.03L17.75 4.09L14.56 4L13.5 1L12.44 4L9.25 4.09L11.78 6.03L10.87 9.09L13.5 7.28L16.13 9.09L15.22 6.03Z">
-        <animate
-          fill="freeze"
-          attributeName="fill-opacity"
-          dur="0.4s"
-          values="1;0"
-        />
+        <animate fill="freeze" attributeName="fill-opacity" dur="0.4s" values="1;0" />
       </path>
       <path d="M19.61 12.25L21.25 11L19.19 10.95L18.5 9L17.81 10.95L15.75 11L17.39 12.25L16.8 14.23L18.5 13.06L20.2 14.23L19.61 12.25Z">
-        <animate
-          fill="freeze"
-          attributeName="fill-opacity"
-          begin="0.2s"
-          dur="0.4s"
-          values="1;0"
-        />
+        <animate fill="freeze" attributeName="fill-opacity" begin="0.2s" dur="0.4s" values="1;0" />
       </path>
     </g>
     <g
@@ -337,50 +264,14 @@ export const MoonIcon: React.FC<{ className?: string }> = ({
     <mask id="lineMdMoonFilledToSunnyFilledLoopTransition0">
       <circle cx="12" cy="12" r="12" fill="#fff" />
       <circle cx="18" cy="6" r="12" fill="#fff">
-        <animate
-          fill="freeze"
-          attributeName="cx"
-          begin="0.6s"
-          dur="0.4s"
-          values="18;22"
-        />
-        <animate
-          fill="freeze"
-          attributeName="cy"
-          begin="0.6s"
-          dur="0.4s"
-          values="6;2"
-        />
-        <animate
-          fill="freeze"
-          attributeName="r"
-          begin="0.6s"
-          dur="0.4s"
-          values="12;3"
-        />
+        <animate fill="freeze" attributeName="cx" begin="0.6s" dur="0.4s" values="18;22" />
+        <animate fill="freeze" attributeName="cy" begin="0.6s" dur="0.4s" values="6;2" />
+        <animate fill="freeze" attributeName="r" begin="0.6s" dur="0.4s" values="12;3" />
       </circle>
       <circle cx="18" cy="6" r="10">
-        <animate
-          fill="freeze"
-          attributeName="cx"
-          begin="0.6s"
-          dur="0.4s"
-          values="18;22"
-        />
-        <animate
-          fill="freeze"
-          attributeName="cy"
-          begin="0.6s"
-          dur="0.4s"
-          values="6;2"
-        />
-        <animate
-          fill="freeze"
-          attributeName="r"
-          begin="0.6s"
-          dur="0.4s"
-          values="10;1"
-        />
+        <animate fill="freeze" attributeName="cx" begin="0.6s" dur="0.4s" values="18;22" />
+        <animate fill="freeze" attributeName="cy" begin="0.6s" dur="0.4s" values="6;2" />
+        <animate fill="freeze" attributeName="r" begin="0.6s" dur="0.4s" values="10;1" />
       </circle>
     </mask>
     <circle
@@ -392,21 +283,12 @@ export const MoonIcon: React.FC<{ className?: string }> = ({
       opacity="0"
     >
       <set attributeName="opacity" begin="0.6s" to="1" />
-      <animate
-        fill="freeze"
-        attributeName="r"
-        begin="0.6s"
-        dur="0.4s"
-        values="10;6"
-      />
+      <animate fill="freeze" attributeName="r" begin="0.6s" dur="0.4s" values="10;6" />
     </circle>
   </svg>
-);
+)
 
-export const LinkArrow: React.FC<{ className?: string }> = ({
-  className,
-  ...rest
-}) => (
+export const LinkArrow: React.FC<{ className?: string }> = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={24}
@@ -425,4 +307,4 @@ export const LinkArrow: React.FC<{ className?: string }> = ({
       d="M11 7H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-5m-7 1L20 4m-5 0h5v5"
     />
   </svg>
-);
+)

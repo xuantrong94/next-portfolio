@@ -1,7 +1,7 @@
-import { motion } from 'framer-motion';
-import React from 'react';
+import { motion } from 'framer-motion'
+import React from 'react'
 
-type Props = {};
+type Props = {}
 
 const TransitionEffect = (props: Props) => {
   return (
@@ -26,7 +26,7 @@ const TransitionEffect = (props: Props) => {
         transition={{ duration: 0.8, ease: 'easeInOut', delay: 0.4 }}
       />
     </>
-  );
-};
+  )
+}
 
-export default TransitionEffect;
+export default TransitionEffect

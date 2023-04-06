@@ -1,10 +1,10 @@
-import { motion } from 'framer-motion';
-import React, { ReactNode } from 'react';
+import { motion } from 'framer-motion'
+import React, { ReactNode } from 'react'
 
 type AnimatedTextProps = {
-  text?: string;
-  className: string;
-};
+  text?: string
+  className: string
+}
 const quote = {
   initial: {
     opacity: 0,
@@ -16,7 +16,7 @@ const quote = {
       staggerChildren: 0.08,
     },
   },
-};
+}
 
 const singleWord = {
   initial: {
@@ -30,7 +30,7 @@ const singleWord = {
       duration: 0.8,
     },
   },
-};
+}
 const AnimatedText: React.FC<AnimatedTextProps> = ({ text, className }) => {
   return (
     <div className="centered mx-auto w-full overflow-hidden py-2 text-center sm:py-0">
@@ -53,7 +53,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({ text, className }) => {
         ))}
       </motion.h1>
     </div>
-  );
-};
+  )
+}
 
-export default AnimatedText;
+export default AnimatedText

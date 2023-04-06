@@ -1,23 +1,17 @@
-import { NextPage } from 'next';
-import Link from 'next/link';
-import Logo from './Logo';
-import { useRouter } from 'next/router';
-import { ICustomLink, ICustomMobileLink } from '@/types';
-import {
-  GithubIcon,
-  LinkedInIcon,
-  MoonIcon,
-  SunIcon,
-  TwitterIcon,
-} from '../Icons';
-import { motion } from 'framer-motion';
-import useThemeSwitcher from '@/libs/hooks/useThemeSwitcher';
-import { useState } from 'react';
-import { GrClose } from 'react-icons/gr';
-type HeaderProps = {};
+import { NextPage } from 'next'
+import Link from 'next/link'
+import Logo from './Logo'
+import { useRouter } from 'next/router'
+import { ICustomLink, ICustomMobileLink } from '@/types'
+import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon, TwitterIcon } from '../Icons'
+import { motion } from 'framer-motion'
+import useThemeSwitcher from '@/libs/hooks/useThemeSwitcher'
+import { useState } from 'react'
+import { GrClose } from 'react-icons/gr'
+type HeaderProps = {}
 
 const CustomLink: React.FC<ICustomLink> = ({ href, title, className }) => {
-  const router = useRouter();
+  const router = useRouter()
   return (
     <Link href={href} className={`${className} group relative`}>
       {title}
@@ -29,21 +23,16 @@ const CustomLink: React.FC<ICustomLink> = ({ href, title, className }) => {
         &nbsp;
       </span>
     </Link>
-  );
-};
+  )
+}
 
-const CustomMobileLink: React.FC<ICustomMobileLink> = ({
-  href,
-  title,
-  className,
-  toggle,
-}) => {
-  const router = useRouter();
+const CustomMobileLink: React.FC<ICustomMobileLink> = ({ href, title, className, toggle }) => {
+  const router = useRouter()
 
   const handleClick = () => {
-    toggle();
-    router.push(href);
-  };
+    toggle()
+    router.push(href)
+  }
 
   return (
     <button
@@ -59,21 +48,18 @@ const CustomMobileLink: React.FC<ICustomMobileLink> = ({
         &nbsp;
       </span>
     </button>
-  );
-};
+  )
+}
 
 const Header: NextPage<HeaderProps> = ({}) => {
-  const [mode, setMode] = useThemeSwitcher();
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [mode, setMode] = useThemeSwitcher()
+  const [isOpen, setIsOpen] = useState<boolean>(false)
   const handleClick = () => {
-    setIsOpen((prev) => !prev);
-  };
+    setIsOpen((prev) => !prev)
+  }
   return (
     <header className="relative z-20 flex w-full items-center justify-start px-8 py-8 font-medium dark:text-light lg:justify-between xl:px-32">
-      <button
-        className="flex flex-col items-center justify-center lg:hidden"
-        onClick={handleClick}
-      >
+      <button className="flex flex-col items-center justify-center lg:hidden" onClick={handleClick}>
         <span
           className={`block h-0.5 w-6 rounded-sm bg-dark transition-all duration-300 ease-out dark:bg-light ${
             isOpen ? 'translate-y-2 rotate-45' : '-translate-y-0.5'
@@ -153,24 +139,9 @@ const Header: NextPage<HeaderProps> = ({}) => {
         >
           <GrClose className="absolute right-4 top-4" onClick={handleClick} />
           <nav className="flex flex-col items-center justify-center gap-y-6">
-            <CustomMobileLink
-              href="/"
-              title="Home"
-              className=""
-              toggle={handleClick}
-            />
-            <CustomMobileLink
-              href="/about"
-              title="About"
-              className=""
-              toggle={handleClick}
-            />
-            <CustomMobileLink
-              href="/projects"
-              title="Projects"
-              className=""
-              toggle={handleClick}
-            />
+            <CustomMobileLink href="/" title="Home" className="" toggle={handleClick} />
+            <CustomMobileLink href="/about" title="About" className="" toggle={handleClick} />
+            <CustomMobileLink href="/projects" title="Projects" className="" toggle={handleClick} />
           </nav>
           <nav className="centered">
             <motion.a
@@ -227,7 +198,7 @@ const Header: NextPage<HeaderProps> = ({}) => {
         <Logo />
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

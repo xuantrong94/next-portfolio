@@ -1,9 +1,9 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode } from 'react'
 
 type LayoutProps = {
-  className?: string;
-  children: ReactNode;
-};
+  className?: string
+  children: ReactNode
+}
 
 const Layout: React.FC<LayoutProps> = ({ className, children }) => {
   return (
@@ -12,7 +12,7 @@ const Layout: React.FC<LayoutProps> = ({ className, children }) => {
     >
       {children}
     </div>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout

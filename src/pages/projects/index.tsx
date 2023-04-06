@@ -1,28 +1,17 @@
-import {
-  AnimatedText,
-  GithubIcon,
-  Layout,
-  TransitionEffect,
-} from '@/components';
-import Link from 'next/link';
-import React from 'react';
-import Image, { StaticImageData } from 'next/image';
-import { Project1Img, Project2Img, Project3Img, Project4Img } from '@/libs/img';
+import { AnimatedText, GithubIcon, Layout, TransitionEffect } from '@/components'
+import Link from 'next/link'
+import React from 'react'
+import Image, { StaticImageData } from 'next/image'
+import { Project1Img, Project2Img, Project3Img, Project4Img } from '@/libs/img'
 export interface IFeaturedProject {
-  title: string;
-  summary: string;
-  img: StaticImageData;
-  link: string;
-  github: string;
+  title: string
+  summary: string
+  img: StaticImageData
+  link: string
+  github: string
 }
-Project1Img;
-const FeaturedProject: React.FC<IFeaturedProject> = ({
-  title,
-  summary,
-  img,
-  link,
-  github,
-}) => {
+Project1Img
+const FeaturedProject: React.FC<IFeaturedProject> = ({ title, summary, img, link, github }) => {
   return (
     <article className="md:-8 relative flex w-full flex-col items-start gap-y-4 rounded-3xl border border-dark bg-light p-6 shadow-2xl dark:border-light dark:bg-dark lg:flex-row lg:p-10 xl:p-12">
       <div className="absolute -right-3 top-0 -z-10 h-[102%] w-[101%] rounded-2xl bg-dark dark:bg-light" />
@@ -55,10 +44,10 @@ const FeaturedProject: React.FC<IFeaturedProject> = ({
         </div>
       </div>
     </article>
-  );
-};
+  )
+}
 
-type Props = {};
+type Props = {}
 
 const Projects = (props: Props) => {
   return (
@@ -124,7 +113,7 @@ const Projects = (props: Props) => {
         </Layout>
       </main>
     </>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects

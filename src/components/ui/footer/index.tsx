@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import Layout from '../Layout';
+import Link from 'next/link'
+import Layout from '../Layout'
 
-type Props = {};
+type Props = {}
 
 const Footer = (props: Props) => {
   return (
@@ -15,7 +15,7 @@ const Footer = (props: Props) => {
         <Link href={'/'}>Have a good day!</Link>
       </Layout>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction, createContext } from 'react';
 
-interface MyContextProps {
+export interface MyContextProps {
   categoriesContext: never[];
   setCategoriesContext: Dispatch<SetStateAction<never[]>>;
   productsContext: never[];

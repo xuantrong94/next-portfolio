@@ -1,15 +1,15 @@
-import { motion, useScroll } from 'framer-motion';
-import React from 'react';
+import { motion, useScroll } from 'framer-motion'
+import React from 'react'
 
 type LiIconProps = {
-  reference: any;
-};
+  reference: any
+}
 
 const LiIcon: React.FC<LiIconProps> = ({ reference }) => {
   const { scrollYProgress } = useScroll({
     target: reference,
     offset: ['center end', 'center center'],
-  });
+  })
   return (
     <figure className="absolute left-0 -translate-y-[2px] stroke-dark dark:stroke-light">
       <svg
@@ -41,7 +41,7 @@ const LiIcon: React.FC<LiIconProps> = ({ reference }) => {
         />
       </svg>
     </figure>
-  );
-};
+  )
+}
 
-export default LiIcon;
+export default LiIcon

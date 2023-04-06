@@ -1,9 +1,9 @@
-import { CircleText } from '@/libs/img';
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
+import { CircleText } from '@/libs/img'
+import Image from 'next/image'
+import Link from 'next/link'
+import React from 'react'
 
-type HireMeProps = {};
+type HireMeProps = {}
 
 const HireMe: React.FC<HireMeProps> = () => {
   return (
@@ -24,7 +24,7 @@ const HireMe: React.FC<HireMeProps> = () => {
         </Link>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default HireMe;
+export default HireMe
