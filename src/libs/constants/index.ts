@@ -1,4 +1,3 @@
-import { INavItem } from '@/types';
 import { home, phone, mail } from 'public/svg';
 import {
   HeadphoneCat,
@@ -6,20 +5,6 @@ import {
   SmartWatchCat,
   SpeakerCat,
 } from 'public/jpg';
-export const NAVBAR_MENU: INavItem[] = [
-  {
-    href: '/',
-    name: 'home',
-  },
-  {
-    href: '/about',
-    name: 'about',
-  },
-  {
-    href: '/category',
-    name: 'categories',
-  },
-];
 
 export const SOCIAL_MENU = [
   {
