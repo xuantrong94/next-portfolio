@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "babel src -d lib",
     "start": "next start",
     "lint": "next lint",
     "format": "prettier \"src/**/*.tsx\" --write --print-width 100 --single-quote --no-semi --plugin-search-dir"
@@ -42,8 +42,10 @@
     "yup": "^1.0.2"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.21.3",
     "@svgr/webpack": "^7.0.0",
     "autoprefixer": "^10.4.13",
+    "babel-eslint": "^10.1.0",
     "framer-motion": "^10.3.1",
     "postcss": "^8.4.21",
     "prettier": "^2.8.4",
